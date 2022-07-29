@@ -29,12 +29,12 @@ body{
     font-size: 1.55rem;
     font-weight: 700;
 }
-.container-cabeçalho ul{
+ul{
     display: flex;
     list-style: none;
     gap: 5rem;
 }
-.container-cabeçalho ul a{
+ul li a{
     color: white;
     text-decoration: none;
     cursor: pointer;
@@ -67,10 +67,10 @@ ul li a:hover{
     width: 700px;
     height: auto;
 }
-.conteudo .texto{
+.texto{
     max-width: 100%;
 }
-.texto .title h1{
+.title h1{
     font-size: 50px;
     color: #ccc;
     text-transform: capitalize;
@@ -80,7 +80,7 @@ ul li a:hover{
     color: #ccc;
     line-height: 2.5rem;
 }
-.texto button{
+button{
     color: #fff;
     background-color: #5bacdf;
     padding: 0.9rem 1.3rem;
@@ -94,4 +94,154 @@ button:hover{
     color: #fff;
     background-color: #2889c2;
 
+}
+aside{
+    display: none;
+}
+
+
+
+@media screen and (max-width: 740px) {
+
+    ul{
+        display: none;
+    }
+
+    .links{
+        display: block;
+    }
+
+   .logo{
+    margin-right: 15rem;
+   }
+
+  
+    aside{
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: flex;
+        overflow: hidden;
+    }
+    
+    .icon-menu ion-icon{
+        width: 45px;
+        height: 45px;
+        margin-right: 1.5rem;
+        margin-top: 2rem;
+        color: #ccc;
+    
+    }
+    
+    #barra-menu{
+        background: #2889c2;
+        height: 110vh;
+        width: 0px;
+        transition: 0.3s all;
+        
+    }
+
+    #barra-menu ul{
+
+        align-items: center;
+        text-align: center;
+        padding: 5rem;
+        line-height: 5rem;
+        
+
+    }
+
+    
+ 
+    #barra-menu ul li a{
+        color: #011927;
+        text-decoration: none;
+        font-size: 1rem;
+        width: 100%;
+       
+      
+    }
+    
+    #barra-menu ul li a:hover{
+        padding: 8px;
+        border-radius: 15px;
+        background: #5bacdf;
+    
+    }
+    
+    .C-icon{
+    
+        margin-top: 50%;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        gap: 15px;
+        overflow: hidden;
+       
+    }
+    
+    .C-icon span{
+        color: #FBF7F7;
+        font-size: 1rem;
+        
+        
+    }
+    
+    .C-icon span:hover{
+        transition: 0.2s;
+        transform: 0.5;
+        color: #C229AA;
+    }
+    
+}
+
+
+@media screen and (max-width: 580px){
+    
+    .title h1{
+        font-size: 2.2rem;
+        margin-left: 1.5rem;
+    }
+
+    .texto p{
+        font-size: 1rem;
+        margin-left: 1.5rem;
+        width: 450px;
+    }
+
+    button{
+
+        margin-left: 1.5rem;
+
+    }
+
+    .imagem img{
+        max-width: 100%;
+        width: 450px;
+        margin-top: 4.5rem;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 440px){
+
+     .imagem img{
+        margin-left: 1.2rem;
+     }
+
+}
+
+@media screen and (max-width: 414px){
+    .texto p{
+        width: 300px;
+    }
+}
+
+
+@media screen and (max-width: 375px){
+    .terxto p{
+        width: 300px;
+    }
+
+   
 }
