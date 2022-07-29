@@ -2,7 +2,7 @@
 *{
     padding: 0;
     margin: 0;
-    box-sizing: 0;
+    box-sizing: border-box;
     font-family: 'Poppins';
 }
 body{
@@ -39,11 +39,7 @@ body{
     text-decoration: none;
     cursor: pointer;
 }
-.container-cabeçalho ul a{
-    color: white;
-    text-decoration: none;
-    cursor: pointer;
-}
+
 ul li a:hover{
     color: #5bacdf;
 
@@ -57,3 +53,45 @@ ul li a:hover{
 .btn:hover{
     color: #fff;
     background-color: #011927;
+}
+.conteudo{
+    display: flex;
+    max-width: 100%;
+    flex-wrap: wrap;
+    margin-top: 5rem;
+    justify-content: space-around;
+    align-items: center;
+}
+.conteudo .imagem img{
+    max-width: 100%;
+    width: 700px;
+    height: auto;
+}
+.conteudo .texto{
+    max-width: 100%;
+}
+.texto .title h1{
+    font-size: 50px;
+    color: #ccc;
+    text-transform: capitalize;
+}
+
+.texto p{
+    color: #ccc;
+    line-height: 2.5rem;
+}
+.texto button{
+    color: #fff;
+    background-color: #5bacdf;
+    padding: 0.9rem 1.3rem;
+    border-radius: 0.5rem;
+    border: none;
+    margin-top: 1.5rem;
+    cursor: pointer;
+}
+button:hover{
+
+    color: #fff;
+    background-color: #2889c2;
+
+}
